@@ -9,6 +9,7 @@ namespace Model
         public static string conexao = "Data Source=Localhost;Initial Catalog=RestaurantAPI;Persist Security Info=True;User ID=RestaurantAPI;Password=123test!";
         
         public DbSet<Teste> Teste { get; set; }
+        public DbSet<Restaurant> Restaurants { get; set; }
 
         public Contexto() : base(new DbContextOptionsBuilder<DbContext>()
             .UseSqlServer(new SqlConnection(conexao))
