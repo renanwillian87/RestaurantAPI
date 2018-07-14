@@ -1,0 +1,16 @@
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\RestaurantAPI.deps.json
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\RestaurantAPI.runtimeconfig.json
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\RestaurantAPI.runtimeconfig.dev.json
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\RestaurantAPI.dll
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\RestaurantAPI.pdb
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\Core.dll
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\Model.dll
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\Core.pdb
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\bin\Debug\netcoreapp2.0\Model.pdb
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\obj\Debug\netcoreapp2.0\RestaurantAPI.csprojAssemblyReference.cache
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\obj\Debug\netcoreapp2.0\RestaurantAPI.csproj.CoreCompileInputs.cache
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\obj\Debug\netcoreapp2.0\RestaurantAPI.AssemblyInfoInputs.cache
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\obj\Debug\netcoreapp2.0\RestaurantAPI.AssemblyInfo.cs
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\obj\Debug\netcoreapp2.0\RestaurantAPI.csproj.CopyComplete
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\obj\Debug\netcoreapp2.0\RestaurantAPI.dll
+C:\Empresa\Source\Testes\RestaurantAPI\API\RestaurantAPI\obj\Debug\netcoreapp2.0\RestaurantAPI.pdb
