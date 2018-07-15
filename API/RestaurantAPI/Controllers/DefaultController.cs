@@ -1,25 +1,29 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using Model;
+using System;
 
 namespace RestaurantAPI.Controllers
 {
     [Produces("application/json")]
-    [Route("api/[Controller]/[Action]")]
+    [Route("api/Default")]
     public class DefaultController : Controller
     {
         [HttpGet]
-        public string RetornoSimples()
+        public IEnumerable<string> Get()
         {
-            return "Retorno do get";
+            return new string[] {"Retorno do get" };
         }
-        [HttpGet("{id}")]
-        public string RetornoId(string id)
-        {
-            return $"Retorno do get{id}";
-        }
-
+        
         [HttpGet("{id}")]
         public string Get(string id)
         {
+            Menu menu = new Menu();
+            menu.Apelido = "Pizzas";
+            menu.DataInicio = DateTime.Now;
+            menu.DataFim = DateTime.Now;
+            menu.Status = true;
+
             return $"Retorno do get{id}";
         }
     }
