@@ -3,43 +3,23 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 // using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Model;
 
 namespace Model.Migrations
 {
     [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20180714213251_Menu")]
+    partial class Menu
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("Model.Item", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<DateTime>("DataCadastro");
-
-                    b.Property<string>("Nome");
-
-                    b.Property<int>("Quantidade");
-
-                    b.Property<bool>("Status");
-
-                    b.Property<decimal>("Valor");
-
-                    b.Property<decimal>("ValorPorItem");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Itens");
-                });
 
             modelBuilder.Entity("Model.Menu", b =>
                 {
@@ -59,19 +39,6 @@ namespace Model.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Menu");
-                });
-
-            modelBuilder.Entity("Model.MenuItem", b =>
-                {
-                    b.Property<Guid>("ItemId");
-
-                    b.Property<Guid>("MenuId");
-
-                    b.HasKey("ItemId", "MenuId");
-
-                    b.HasIndex("MenuId");
-
-                    b.ToTable("MenuItens");
                 });
 
             modelBuilder.Entity("Model.MenuRestaurant", b =>
@@ -124,19 +91,6 @@ namespace Model.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teste");
-                });
-
-            modelBuilder.Entity("Model.MenuItem", b =>
-                {
-                    b.HasOne("Model.Item", "Item")
-                        .WithMany()
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Model.Menu", "Menu")
-                        .WithMany()
-                        .HasForeignKey("MenuId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Model.MenuRestaurant", b =>
